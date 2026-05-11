@@ -7,10 +7,11 @@ class DashboardViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AdaptiveLayout(
-      mobileLayout: (context) => Text("mobileLayout"),
-      tabletLayout: (context) => Text("tabletLayout"),
-      descktopLayout: (context) => DesctopLayout(),
-    );
+    return DesctopLayout();
+    // return AdaptiveLayout(
+    //   mobileLayout: (context) => Text("mobileLayout"),
+    //   tabletLayout: (context) => Text("tabletLayout"),
+    //   descktopLayout: (context) => DesctopLayout(),
+    // );
   }
 }

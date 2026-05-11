@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:myresponsive_dashboard/core/utils/app_images.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:myresponsive_dashboard/core/utils/app_styles.dart';
+import 'package:myresponsive_dashboard/features/home/data/models/drawer_item_modal.dart';
+import 'package:myresponsive_dashboard/features/home/data/models/user_model.dart';
+import 'package:myresponsive_dashboard/features/home/presentation/wedgits/cusotm_inactive_active_drawer_item.dart';
+import 'package:myresponsive_dashboard/features/home/presentation/wedgits/custom_drawer.dart';
+import 'package:myresponsive_dashboard/features/home/presentation/wedgits/custom_user_details_container.dart';
+import 'package:myresponsive_dashboard/features/home/presentation/wedgits/drawer_item_list_view_builder.dart';
 
 class DesctopLayout extends StatelessWidget {
   const DesctopLayout({super.key});
@@ -9,35 +16,7 @@ class DesctopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(
-          flex: 1,
-          child: Container(
-            color: Color(0xFFFFFFFF),
-            child: Padding(
-              padding: const EdgeInsets.only(
-                left: 28,
-                right: 20,
-                top: 50,
-                bottom: 48,
-              ),
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 12, right: 27),
-                    child: Container(
-                      height: 53,
-                      color: Color(0xffc4c4c4),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [SvgPicture.asset(AppImages.imagesGallery)],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
+        Expanded(flex: 1, child: CustomDrawer()),
         Expanded(
           flex: 3,
           child: Padding(
