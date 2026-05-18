@@ -10,7 +10,12 @@ class AllExpansessHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text("All Expenses", style: AppStyles.styleSemiBold20(context)),
+        Text(
+          "All Expenses",
+          style: AppStyles.styleSemiBold20(
+            context,
+          ).copyWith(fontWeight: FontWeight.w700),
+        ),
         Expanded(child: SizedBox()),
         Container(
           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 14),

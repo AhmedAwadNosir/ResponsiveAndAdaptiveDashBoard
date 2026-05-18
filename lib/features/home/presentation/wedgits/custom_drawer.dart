@@ -46,7 +46,7 @@ class CustomDrawer extends StatelessWidget {
             SliverToBoxAdapter(
               child: CustomUserDetailsContainer(
                 userModel: UserModel(
-                  avatar: AppImages.imagesAvatar1,
+                  avatar: AppImages.imagesAvatar3,
                   name: "Lekan Okeowo",
                   email: "demo@gmail.com",
                 ),

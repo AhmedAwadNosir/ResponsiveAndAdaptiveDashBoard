@@ -23,7 +23,7 @@ class InactiveExpensessItem extends StatelessWidget {
             icon: allExpansessItemModal.icon,
             iconColor: Color(0xff4EB7F2),
           ),
-          SizedBox(height: 34),
+          SizedBox(height: 32),
           Text(
             allExpansessItemModal.title,
             style: AppStyles.styleSemiBold16(context),

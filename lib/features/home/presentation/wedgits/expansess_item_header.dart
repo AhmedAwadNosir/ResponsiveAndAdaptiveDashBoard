@@ -18,7 +18,7 @@ class ExpancessItemHeader extends StatelessWidget {
     return Row(
       children: [
         CircleAvatar(
-          radius: 35,
+          radius: 32,
           backgroundColor: iconBackgroundColor ?? Color(0xFFFAFAFA),
           child: SvgPicture.asset(
             icon,

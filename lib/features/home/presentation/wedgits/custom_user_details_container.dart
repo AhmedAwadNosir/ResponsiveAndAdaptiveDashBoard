@@ -9,17 +9,21 @@ class CustomUserDetailsContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 63,
       decoration: BoxDecoration(
         color: Color(0xffFAFAFA),
         borderRadius: BorderRadius.circular(12),
       ),
-      child: ListTile(
-        leading: SvgPicture.asset(userModel.avatar, height: 32, width: 32),
-        title: Text(userModel.name, style: AppStyles.styleSemiBold16(context)),
-        subtitle: Text(
-          userModel.email,
-          style: AppStyles.styleRegular12(context),
+      child: Center(
+        child: ListTile(
+          leading: SvgPicture.asset(userModel.avatar),
+          title: Text(
+            userModel.name,
+            style: AppStyles.styleSemiBold16(context),
+          ),
+          subtitle: Text(
+            userModel.email,
+            style: AppStyles.styleRegular12(context),
+          ),
         ),
       ),
     );
