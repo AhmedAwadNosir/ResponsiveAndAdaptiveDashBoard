@@ -14,6 +14,7 @@ class CustomIncomChartItem extends StatelessWidget {
           dotColor: chartItemModal.dotColor,
           hight: 12,
           width: 12,
+          isActive: false,
         ),
         SizedBox(width: 4),
         Text(chartItemModal.title, style: AppStyles.styleRegular16(context)),
