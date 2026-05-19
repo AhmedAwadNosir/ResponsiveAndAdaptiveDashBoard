@@ -47,6 +47,10 @@ class AppImages {
   /// assets/images/gallery.svg
   static const String imagesGallery = "assets/images/gallery.svg";
 
+  /// Assets for imagesIncomchart
+  /// assets/images/incomchart.svg
+  static const String imagesIncomchart = "assets/images/incomchart.svg";
+
   /// Assets for imagesIncome
   /// assets/images/income.svg
   static const String imagesIncome = "assets/images/income.svg";
@@ -58,6 +62,10 @@ class AppImages {
   /// Assets for imagesMoneys
   /// assets/images/moneys.svg
   static const String imagesMoneys = "assets/images/moneys.svg";
+
+  /// Assets for imagesMyCard
+  /// assets/images/my_card.svg
+  static const String imagesMyCard = "assets/images/my_card.svg";
 
   /// Assets for imagesMyInvestments
   /// assets/images/my_investments.svg

@@ -42,7 +42,7 @@ class _AllExpancessState extends State<AllExpancess> {
       child: Column(
         children: [
           AllExpansessHeader(),
-          SizedBox(height: 8),
+          SizedBox(height: 16),
           Row(
             children: items.asMap().entries.map((e) {
               int index = e.key;

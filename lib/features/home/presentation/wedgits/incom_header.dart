@@ -3,14 +3,14 @@ import 'package:flutter_svg/svg.dart';
 import 'package:myresponsive_dashboard/core/utils/app_images.dart';
 import 'package:myresponsive_dashboard/core/utils/app_styles.dart';
 
-class AllExpansessHeader extends StatelessWidget {
-  const AllExpansessHeader({super.key});
+class IncomeHeader extends StatelessWidget {
+  const IncomeHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text("All Expenses", style: AppStyles.styleSemiBold20(context)),
+        Text("Income", style: AppStyles.styleSemiBold20(context)),
         Expanded(child: SizedBox()),
         Container(
           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 14),
